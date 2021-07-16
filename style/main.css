@@ -1,0 +1,131 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ELEMENTOS-BASE*/
+body{
+  background: var(--preto);
+  font-family: Arial, Times, serif;
+  color: white;
+}
+
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+header .logo{
+  color: var(--vermelho);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 80px;
+  margin-left: 30px;
+}
+
+header .mini-logo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 270px;
+  display: flex;
+}
+
+.login{
+  margin-right: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #FFF;
+}
+
+/*FILME PRINCIPAL*/
+.filme-principal{
+  font-size: 20px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50))100% ,url('/img/munich-movie.jpg');
+  
+  height: 400px;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.container{
+  margin-left: 35px;
+}
+
+ .titulo{
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ .filme-principal .descricao{
+  margin-bottom: 90px;
+  font-size: 25px;
+}
+
+ .botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  margin-right: 40px;
+  padding: 15px 40px;
+  
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.botao:hover{
+  background-color: white;
+  color:black;
+}
+
+.botao i{
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.releases{
+  font-size: 45px;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.boxFilme{
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.item:hover{
+  background-color: rgba(0,0,0,.50);
+  color: black;
+  cursor: pointer;
+}
